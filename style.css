@@ -48,5 +48,85 @@ body{
     font-weight: 500;
     position: relative;
     padding: 0.5rem 0;
+}
+
+/*after / before  >> coisas que posso escolher pra fazer antes ou depois*/ 
+
+.menu-link::after{
+    content: " "; /*é obrigatório colocar content*/
+    height: 2px;
+    width: 0; /*sem hover a largura é 0*/
+    position: absolute; /*posicao absolute, n se mexe*/
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.5s ease;
+}
+
+.menu-link:hover::after{
+    width: 100%;
+}
+
+/*navbar termina aqui*/
+
+.header{
+    min-height: 100vh; /*vh é a tela toda, ennt minimo é a tela toda*/
+    display: flex; /*habilita algumas coisa como as que vao ser usadas abaixo*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+  
+.photo-profile{
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 0 20px rgba(79, 70, 229, 0.3);
+    border-radius: 50%;
+    border: 4px solid var(--vidro);
+}
+
+h1{
+    font-size:3.5em;
+    color: var(--primary);
+    font-weight: bold;
+    margin:20px;
+}
+
+.header-subtitle{
+    font-size: 1.5rem;
+    color: var(--light);
+
+}
+
+/*primeira pagina termina aqui*/
+
+.about{
+    padding: 6rem 2rem;
+
+}
+
+.title-about{
+
+    font-size: 3rem;
+    color: var(--light);
+    margin-bottom:20px ;
+}
+
+.box-about{
+
+    padding: 2rem;
+    max-width: 800px;/*para nunca crescer mmuito, acima disso*/
+    margin: 0 auto; /*em cima sem margin, mas dos lados alinha para mim e centraliza*/
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);/*adiciona um filtro e o estilo é 'blur'. Para colocar filtro ele deve ter um back-ground*/
+    background: rgba(255, 255, 255, 0.05);
+
+}
+
+.paragraph-about{
+    text-align: center;
+    font-size: 1.2rem;
     
 }
