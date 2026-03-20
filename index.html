@@ -3,12 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Page</title>
+    <title>My Portfolio</title>
 </head>
 <body>
-    <div>
-        <h1>This will be my Portfolio Page</h1>
-        <p>Essa será a página do meu portfolio, mas em uma primeira fase a página onde terão os meus objectivos</p>
-    </div>
+   <nav class="navbar">
+        <ul>
+           <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#projects">Projects</a>
+            </li>
+            <li>
+                <a href="#contacts">contacts</a>
+            </li>
+        </ul>
+   </nav>
+
+   <main id="home" class="header">
+        <div>
+            <img src="./imagem/foto_keyvin.jpg" alt="foto de KEyvin Cumbe" class="photo-prrofile">
+            <h1>Keyvin Cumbe</h1>
+            <p>Computer scientist</p>
+        </div>
+
+   </main>
+
+   <section id="about" class="about">
+        <h2 class="title-about">Sobre Mim</h2>
+        
+        <div class="box-about">
+            <p class="paragraph-about">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, asperiores quia voluptas placeat alias itaque maiores libero illo soluta velit modi eligendi aspernatur sint aut dolor dolores magni inventore eveniet!
+            </p>
+        </div>
+
+   </section>
+
+   <section id="Projects" class="Projects">
+
+        <h2 class="title-projects">My Projects</h2>
+
+        <div class="box-projects">
+
+            <div class="card-project">
+
+                <img src="./imagem/android.png" alt="project 1" class="image-projects">
+                <h3 class="info-projects">Loja de Carros</h3>
+                <p class="paragraph-project">Loja virtual moderna com animações suaves e designs interressantes</p>
+
+            </div>
+        </div>
+
+         
+        <div class="box-projects">
+
+            <div class="card-project">
+
+                <img src="./imagem/android.png" alt="project 2" class="image-projects">
+                <h3 class="info-projects">Projecto Android</h3>
+                <p class="paragraph-project">Loja virtual moderna com animações suaves e designs interressantes</p>
+
+            </div>
+        </div>
+
+         
+        <div class="box-projects">
+
+            <div class="card-project">
+
+                <img src="./imagem/android.png" alt="project 3" class="image-projects">
+                <h3 class="info-projects">Cordel</h3>
+                <p class="paragraph-project">Loja virtual moderna com animações suaves e designs interressantes</p>
+
+            </div>
+        </div>
+    
+   </section>
+
+    <section id="contacts" class="contacts">
+
+        <h2 class="title-contacts">Contacts</h2>
+
+        <form id="form" class="form-contacts">
+            <div class="name-form">
+                <input placeholder="Name" class="field-form">    
+            </div>
+            <div class="group-form">
+                <textarea class="text-form" placeholder="Type your Message" id="form"></textarea>    
+            </div>
+            
+
+        </form>
+
+    </section>
+   
+
 </body>
 </html>
