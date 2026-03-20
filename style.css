@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+/*raiz , estou a criar variaveis*/
+
+    --primary : #4f46e5;
+    --secondary : #7c3aed;
+    --dark : #0f172a;
+    --moredark : #0a0f1c;
+    --light: #e2e8f0;
+    --vidro: rgba(255, 255 ,255, 0.1)
+
+}
+
+body{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+.navbar{
+    position: fixed;
+    top: 0; 
+    background: rgba(15, 23, 42, 0.8);
+    width: 100%;
+    z-index: inherit; /*garante quem fica em frente de quem*/
+    padding: 1.5rem;
+
+}
