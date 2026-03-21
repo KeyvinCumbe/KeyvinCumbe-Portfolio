@@ -65,6 +65,7 @@ body{
 
 .menu-link:hover::after{
     width: 100%;
+   
 }
 
 /*navbar termina aqui*/
@@ -107,7 +108,7 @@ h1{
 }
 
 .title-about{
-
+    text-align: center;
     font-size: 3rem;
     color: var(--light);
     margin-bottom:20px ;
@@ -130,3 +131,137 @@ h1{
     font-size: 1.2rem;
     
 }
+
+/*O about ermina aqui*/
+
+
+.projects{
+    padding: 6rem 2rem;
+}
+
+.title-projects{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    
+    
+}
+
+.image-projects{
+    height: 200px;
+    width: 100%;
+    object-fit: cover; /*cobre a e se encaixa na area onde está respeitando os maximos que dei*/
+}
+
+.box-projects{
+    display: grid; /*organiza os itens como um grid.Podemos organizar como queremos*/
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    /*encaixa todo intens na tela e de modo que tenham todos mesmo tamanho. auto-fit se encaixa automaticamente no tamanho que tem disponivel.  minmax define o minimo e o maximo da tela.. min 300px e maximo 1fr <fracao> que é a tela toda*/
+
+    gap: 2rem;
+    max-width:1200px;
+    margin: 0 auto;
+}
+
+.box-text-projects{
+    padding: 2rem;
+
+}
+
+.card-projects{
+    background: rgba(255, 255, 255, 0.05) ;
+    border-radius: 16px;
+    backdrop-filter: blur(5px) ;
+    border: 1px solid var(--vidro);
+    overflow: hidden; /*caso fica grande a imagem ou sla, ele esconde a sobra e nao sai do card*/
+    transition: all 0.5s ease;
+}
+
+.card-projects:hover{
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03); /*movimenta no eixo y -10px e aumenta a escala*/
+    cursor: pointer;
+
+}
+
+.info-projects{
+    margin-bottom: 5px;
+}
+
+.paragraph-projects{
+    color: rgba(226, 232, 240, 0.8);
+    line-height: 1.25rem; /*linha fica mais alta*/
+}
+
+/*projectos termina aqui*/
+
+
+.contacts{
+
+    margin-bottom: 200px;
+
+}
+
+.title-contacts{
+
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.form-contacts{
+
+    max-width: 600px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    border: 1px solid var(--vidro);
+    border-radius: 16px;
+
+}
+
+
+.field-form{
+    width: 100%;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    color: var(--light);
+    outline: none;
+    
+
+}
+
+/*quando eu puser foco vai acontecer alguma coisaa*/
+
+.field-form:focus{
+    border-color: var(--secondary);
+    box-shadow: 0 0 10px rgba(79, 70, 229, 0.3) ;
+}
+
+.group-form{
+    margin-bottom: 1.5rem;
+}
+
+.button-form{
+    color: var(--light);
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+    transition: all 0.5s ease;
+}
+
+.button-form:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4) ;
+    
+
+
+}
+
